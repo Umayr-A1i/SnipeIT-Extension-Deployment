@@ -1,1 +1,85 @@
+# ===============================================
+# .dockerignore — Flask Middleware
+# ===============================================
 
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+*.manifest
+*.spec
+
+# Virtual environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+wheels/
+share/python-wheels/
+*.whl
+*.deb
+*.rpm
+
+# Unit tests / coverage
+tests/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Local databases
+*.db
+*.sqlite3
+*.sqlite
+*.sqlite-journal
+
+# IDEs / Editors
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+docs/
+README.md
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker / Compose overrides
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile.*
