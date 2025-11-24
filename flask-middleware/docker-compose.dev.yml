@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  middleware:
+    build: .
+    image: flask-middleware         
+    container_name: flask-middleware
+    ports:
+      - "5001:5001"
+    environment:
+      EXTENSION_API_KEY: "${EXTENSION_API_KEY}"
+      SNIPEIT_API_BASE_URL: "${SNIPEIT_API_BASE_URL}"
+      SNIPEIT_API_TOKEN: "${SNIPEIT_API_TOKEN}"
+    env_file:
+      - .env
+    restart: unless-stopped
+
